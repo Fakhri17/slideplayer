@@ -1,6 +1,7 @@
 import 'dart:math' as math;
-import 'package:flutter_slides/models/normalization_multipliers.dart';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_slides/models/normalization_multipliers.dart';
 
 class MainTitleContent extends StatefulWidget {
   MainTitleContent({
@@ -157,7 +158,7 @@ class _MainTitleContentState extends State<MainTitleContent>
                     text: TextSpan(
                       children: [
                         TextSpan(
-                            text: 'Flutter\nLive',
+                            text: ' What\'s new\n in Flutter',
                             style: TextStyle().copyWith(
                                 color: Colors.white,
                                 height: widget.lineHeight,
@@ -165,7 +166,7 @@ class _MainTitleContentState extends State<MainTitleContent>
                                 fontSize: _defaultFontSize *
                                     _flutterLiveScaleTransition.value)),
                         TextSpan(
-                            text: ' ‘18',
+                            text: ' 2019 ',
                             style: TextStyle().copyWith(
                                 color: Color(0xFF13B9FD),
                                 height: widget.lineHeight,
