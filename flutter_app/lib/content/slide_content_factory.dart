@@ -1,3 +1,6 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_slides/content/ampersanda_profile.dart';
+import 'package:flutter_slides/content/coding_rolodex_content.dart';
 import 'package:flutter_slides/content/desktop_embedding_content.dart';
 import 'package:flutter_slides/content/error_content.dart';
 import 'package:flutter_slides/content/flare_content.dart';
@@ -5,13 +8,11 @@ import 'package:flutter_slides/content/image_content.dart';
 import 'package:flutter_slides/content/label_content.dart';
 import 'package:flutter_slides/content/lottie_content.dart';
 import 'package:flutter_slides/content/main_title_content.dart';
+import 'package:flutter_slides/content/pillars_content.dart';
 import 'package:flutter_slides/content/rect_content.dart';
 import 'package:flutter_slides/content/supported_platforms_content.dart';
 import 'package:flutter_slides/content/team_photos_content.dart';
 import 'package:flutter_slides/models/normalization_multipliers.dart';
-import 'package:flutter_slides/content/pillars_content.dart';
-import 'package:flutter_slides/content/coding_rolodex_content.dart';
-import 'package:flutter/material.dart';
 
 typedef Widget Constructor<Widget>(
   SlideContentParams contentParams,
@@ -38,11 +39,14 @@ class SlideContentFactory {
   factory SlideContentFactory() => _contentFactory;
 
   SlideContentFactory._internal() {
+    register('ampersanda_profile', (params) {
+      return AmpersandaProfile();
+    });
     register('error', (params) => ErrorContent());
     register('rect', (params) => RectContent(contentMap: params.contentMap));
     register(
       'label',
-          (params) => LabelContent.fromContentMap(
+      (params) => LabelContent.fromContentMap(
         contentMap: params.contentMap,
         fontScaleFactor: params.normalizationMultipliers.font,
       ),
@@ -51,28 +55,28 @@ class SlideContentFactory {
     register('lottie_animation',
         (params) => LottieContent(contentMap: params.contentMap));
     register('nima_actor',
-            (params) => NimaActorContent(contentMap: params.contentMap));
+        (params) => NimaActorContent(contentMap: params.contentMap));
     register('flare_actor',
-            (params) => FlareActorContent(contentMap: params.contentMap));
+        (params) => FlareActorContent(contentMap: params.contentMap));
     register(
         'desktop_embedding',
-            (params) => DesktopEmbeddingContent(
+        (params) => DesktopEmbeddingContent(
             normalizationMultipliers: params.normalizationMultipliers));
     register(
         'coding_rolodex_screen',
-            (params) => CodingRolodexContent(
+        (params) => CodingRolodexContent(
             shouldAnimate: !params.isPreview,
             normMultis: params.normalizationMultipliers));
     register(
       'main_title_slide',
-          (params) => MainTitleContent(
+      (params) => MainTitleContent(
         contentMap: params.contentMap,
         shouldAnimate: !params.isPreview,
         normMultis: params.normalizationMultipliers,
       ),
     );
     register(
-        'team_photos',
+        'profile',
         (params) => TeamPhotosContent(
             contentMap: params.contentMap, isPreview: params.isPreview));
     register(
@@ -100,6 +104,7 @@ class SlideContentFactory {
     NormalizationMultipliers normalizationMultipliers,
     ValueNotifier<int> slideAdvancementNotifier,
   ) {
+    print(_constructors);
     return (_constructors[type] ?? _constructors['error'])(
       SlideContentParams(
         contentMap: contentMap,

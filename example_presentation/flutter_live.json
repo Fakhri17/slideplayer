@@ -31,6 +31,33 @@
       ]
     },
     {
+      "bg_color": "#FFFFFFFF",
+      "content": [
+        {
+          "type": "image",
+          "x": 0.0,
+          "y": 0.0,
+          "fit": "contain",
+          "height": 1080.0,
+          "width": 1920.0,
+          "evict": true,
+          "file": "images/misc/FL18_Slide_17B_v01.gif"
+        }
+      ]
+    },
+    {
+      "bg_color": "#FFFFFFFF",
+      "content": [
+        {
+          "type": "ampersanda_profile",
+          "x": 0.0,
+          "y": 0.0,
+          "height": 1080.0,
+          "width": 1920.0
+        }
+      ]
+    },
+    {
       "bg_color": "#FFFFFFff",
       "content": [
         {
@@ -132,54 +159,7 @@
         }
       ]
     },
-    {
-      "bg_color": "#FFFFFFff",
-      "content": [
-        {
-          "type": "image",
-          "x": 321.0,
-          "y": 86.0,
-          "height": 908.0,
-          "width": 544.0,
-          "file": "images/misc/android_ambig.webp",
-          "animation": {
-            "curve": "easeInOut",
-            "delay_in_milliseconds": 5000,
-            "duration_in_milliseconds": 1000,
-            "offset_x": 367.0
-          }
-        },
-        {
-          "type": "image",
-          "x": 1007.0,
-          "y": 86.0,
-          "height": 908.0,
-          "width": 544.0,
-          "file": "images/misc/ios_ambig.webp",
-          "animation": {
-            "curve": "easeInOut",
-            "delay_in_milliseconds": 5000,
-            "duration_in_milliseconds": 1000,
-            "offset_x": -319.0
-          }
-        },
-        {
-          "type": "image",
-          "x": 688.0,
-          "y": 86.0,
-          "height": 908.0,
-          "width": 544.0,
-          "file": "images/misc/ambiguous-device-ui.webp",
-          "animation": {
-            "curve": "easeInOut",
-            "delay_in_milliseconds": 5750,
-            "duration_in_milliseconds": 750,
-            "opacity_start": 0.0,
-            "opacity_end": 1.0
-          }
-        }
-      ]
-    },
+
     {
       "advancement_count": 5,
       "content": [
@@ -492,45 +472,6 @@
               "height": 640.0
             }
           }
-        }
-      ]
-    },
-    {
-      "bg_color": "#FFFFFFFF",
-      "content": [
-        {
-          "type": "image",
-          "x": 0.0,
-          "y": 0.0,
-          "fit": "contain",
-          "height": 1080.0,
-          "width": 1920.0,
-          "evict": true,
-          "file": "images/misc/FL18_Slide_17A_v01.gif"
-        }
-      ]
-    },
-    {
-      "bg_color": "#FFFFFFFF",
-      "content": [
-       {
-          "type": "image",
-          "x": 0.0,
-          "y": 0.0,
-          "fit": "contain",
-          "height": 1080.0,
-          "width": 1920.0,
-          "file": "images/misc/Flutter_1.0_evict_helper.webp"
-        },
-        {
-          "type": "image",
-          "x": 0.0,
-          "y": 0.0,
-          "fit": "contain",
-          "height": 1080.0,
-          "width": 1920.0,
-          "evict": true,
-          "file": "images/misc/FL18_Slide_17B_v01.gif"
         }
       ]
     },

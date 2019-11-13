@@ -158,7 +158,7 @@ class _MainTitleContentState extends State<MainTitleContent>
                     text: TextSpan(
                       children: [
                         TextSpan(
-                            text: ' What\'s new\n in Flutter',
+                            text: ' Animations in \n',
                             style: TextStyle().copyWith(
                                 color: Colors.white,
                                 height: widget.lineHeight,
@@ -166,7 +166,7 @@ class _MainTitleContentState extends State<MainTitleContent>
                                 fontSize: _defaultFontSize *
                                     _flutterLiveScaleTransition.value)),
                         TextSpan(
-                            text: ' 2019 ',
+                            text: ' Flutter ',
                             style: TextStyle().copyWith(
                                 color: Color(0xFF13B9FD),
                                 height: widget.lineHeight,
@@ -334,7 +334,6 @@ class _WelcomeCellState extends State<WelcomeCell>
     }
     return Stack(
       children: <Widget>[
-        // Wrap in fade transition for exit
         FadeTransition(
           opacity: glitchAnimation,
           child: flutterTextWidget,

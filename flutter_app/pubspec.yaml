@@ -46,6 +46,7 @@ flutter:
   assets:
   - assets/fonts/GoogleSans/
   - assets/flare/
+  - assets/images/
 
   fonts:
     - family: GoogleSans
