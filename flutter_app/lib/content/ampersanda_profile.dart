@@ -60,7 +60,7 @@ class _AmpersandaProfileState extends State<AmpersandaProfile>
                 child: Container(
                     padding: EdgeInsets.symmetric(vertical: 32.0),
                     child: Image.asset('assets/images/profile_photo.jpeg',
-                        width: 200.0)),
+                        width: MediaQuery.of(context).size.width * 0.16)),
               ),
             ),
             Opacity(
@@ -69,7 +69,8 @@ class _AmpersandaProfileState extends State<AmpersandaProfile>
                 offset: Offset(0.0, 24.0 - (nameAnimation.value * 24.0)),
                 child: Text(
                   'Mochamad Lucky Pradana',
-                  style: TextStyle(fontSize: 32.0),
+                  style: TextStyle(
+                      fontSize: MediaQuery.of(context).size.width * 0.032),
                 ),
               ),
             ),
@@ -82,7 +83,9 @@ class _AmpersandaProfileState extends State<AmpersandaProfile>
                 offset: Offset(0.0, 24.0 - (nameAnimation.value * 24.0)),
                 child: Text(
                   'Developer at Aleph Labs',
-                  style: TextStyle(fontSize: 20.0, color: Colors.grey),
+                  style: TextStyle(
+                      fontSize: MediaQuery.of(context).size.width * 0.024,
+                      color: Colors.grey),
                 ),
               ),
             )
@@ -101,13 +104,15 @@ class _AmpersandaProfileState extends State<AmpersandaProfile>
                     children: <Widget>[
                       Image.asset(
                         'assets/images/twitter.png',
-                        width: 48.0,
+                        width: MediaQuery.of(context).size.width * 0.032,
                         filterQuality: FilterQuality.high,
                       ),
                       SizedBox(height: 16.0),
                       Text(
                         '@ampersanda',
-                        style: TextStyle(fontSize: 20.0),
+                        style: TextStyle(
+                            fontSize:
+                                MediaQuery.of(context).size.width * 0.016),
                       )
                     ],
                   ),
@@ -115,12 +120,16 @@ class _AmpersandaProfileState extends State<AmpersandaProfile>
                     children: <Widget>[
                       Text(
                         'w w w',
-                        style: TextStyle(fontSize: 32.0),
+                        style: TextStyle(
+                            fontSize:
+                                MediaQuery.of(context).size.width * 0.018),
                       ),
                       SizedBox(height: 16.0),
                       Text(
                         'https://ampersanda.dev',
-                        style: TextStyle(fontSize: 20.0),
+                        style: TextStyle(
+                            fontSize:
+                                MediaQuery.of(context).size.width * 0.016),
                       )
                     ],
                   ),
@@ -128,13 +137,15 @@ class _AmpersandaProfileState extends State<AmpersandaProfile>
                     children: <Widget>[
                       Image.asset(
                         'assets/images/github.png',
-                        width: 48.0,
+                        width: MediaQuery.of(context).size.width * 0.032,
                         filterQuality: FilterQuality.high,
                       ),
                       SizedBox(height: 16.0),
                       Text(
                         '@ampersanda',
-                        style: TextStyle(fontSize: 20.0),
+                        style: TextStyle(
+                            fontSize:
+                                MediaQuery.of(context).size.width * 0.016),
                       )
                     ],
                   ),

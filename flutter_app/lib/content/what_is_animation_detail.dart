@@ -31,6 +31,13 @@ class _WhatIsAnimationDetailState extends State<WhatIsAnimationDetail>
   }
 
   @override
+  void dispose() {
+    super.dispose();
+
+    _controller?.dispose();
+  }
+
+  @override
   build(context) {
     return Stack(
       children: <Widget>[
@@ -40,23 +47,32 @@ class _WhatIsAnimationDetailState extends State<WhatIsAnimationDetail>
               offset: Offset(0.0, (animation.value * -48.0)),
               child: Text(
                 'Animation',
-                textScaleFactor: 4.0,
-                style: TextStyle(color: Colors.black87),
+                style: TextStyle(
+                    color: Colors.black87,
+                    fontSize: MediaQuery.of(context).size.width * 0.06),
               ),
             ),
           ),
         ),
         Positioned.fill(
-          top: 200.0,
+          top: MediaQuery.of(context).size.width * 0.2,
+          left: MediaQuery.of(context).size.width * 0.03,
+          right: MediaQuery.of(context).size.width * 0.03,
           child: Transform.translate(
-            offset: Offset(0.0, delayedAnimation.value * -24.0),
+            offset: Offset(
+                0.0,
+                delayedAnimation.value *
+                    -MediaQuery.of(context).size.width *
+                    0.02),
             child: Opacity(
               opacity: delayedAnimation.value,
               child: Center(
                 child: Text(
                   'Animation is a method in which pictures are manipulated to appear as moving images',
                   textAlign: TextAlign.center,
-                  style: TextStyle(color: Colors.grey, fontSize: 28.0),
+                  style: TextStyle(
+                      color: Colors.grey,
+                      fontSize: MediaQuery.of(context).size.width * 0.032),
                 ),
               ),
             ),

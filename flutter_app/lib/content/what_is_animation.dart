@@ -16,8 +16,9 @@ class _WhatIsAnimationState extends State<WhatIsAnimation> {
     return Center(
       child: Text(
         'Animation',
-        textScaleFactor: 4.0,
-        style: TextStyle(color: Colors.black87),
+        style: TextStyle(
+            color: Colors.black87,
+            fontSize: MediaQuery.of(context).size.width * 0.06),
       ),
     );
   }
