@@ -3,6 +3,8 @@ import 'package:flutter_slides/content/ampersanda_profile.dart';
 import 'package:flutter_slides/content/animation_widgets.dart';
 import 'package:flutter_slides/content/animation_widgets_implicitly.dart';
 import 'package:flutter_slides/content/animation_widgets_implicitly_container.dart';
+import 'package:flutter_slides/content/animation_widgets_implicitly_example.dart';
+import 'package:flutter_slides/content/animation_widgets_implicitly_example_fade.dart';
 import 'package:flutter_slides/content/coding_rolodex_content.dart';
 import 'package:flutter_slides/content/desktop_embedding_content.dart';
 import 'package:flutter_slides/content/error_content.dart';
@@ -58,6 +60,12 @@ class SlideContentFactory {
     });
     register('animation_widgets_implicitly_container', (params) {
       return AnimationWidgetsImplicitlyContainer();
+    });
+    register('animation_widgets_implicitly_container_example', (params) {
+      return AnimationWidgetsImplicitlyContainerExample();
+    });
+    register('animation_widgets_implicitly_container_example_fade', (params) {
+      return AnimationWidgetsImplicitlyContainerExampleFade();
     });
     register('what_is_animation_detail', (params) {
       return WhatIsAnimationDetail();
