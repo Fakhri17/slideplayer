@@ -143,6 +143,18 @@
       ]
     },
     {
+      "bg_color": "#FFFFFFFF",
+      "content": [
+        {
+          "type": "animated_container_example",
+          "x": 0.0,
+          "y": 0.0,
+          "height": 1080.0,
+          "width": 1920.0
+        }
+      ]
+    },
+    {
       "bg_color": "#FFFFFFff",
       "content": [
         {

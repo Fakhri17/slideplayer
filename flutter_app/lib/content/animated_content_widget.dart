@@ -1,7 +1,8 @@
-import 'package:flutter_slides/utils/curve_utils.dart' as CurveUtils;
-import 'package:flutter/material.dart';
 import 'dart:math' as math;
+
+import 'package:flutter/material.dart';
 import 'package:flutter_slides/utils/align_utils.dart' as AlignUtils;
+import 'package:flutter_slides/utils/curve_utils.dart' as CurveUtils;
 
 class AnimatedContentWidget extends StatefulWidget {
   final Widget child;
@@ -65,8 +66,7 @@ class _AnimatedContentWidgetState extends State<AnimatedContentWidget>
     _scaleAnimation = widget.scale.animate(_animation);
     if (widget.completeAnimation) {
       _controller.value = 1.0;
-    }
-    else {
+    } else {
       try {
         Future.delayed(Duration(milliseconds: widget.delay)).then((_) {
           if (mounted) _controller?.forward(from: 0.0);

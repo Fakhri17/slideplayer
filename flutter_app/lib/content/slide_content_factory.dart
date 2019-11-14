@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_slides/content/ampersanda_profile.dart';
+import 'package:flutter_slides/content/animated_container_example.dart';
 import 'package:flutter_slides/content/animation_widgets.dart';
 import 'package:flutter_slides/content/animation_widgets_implicitly.dart';
 import 'package:flutter_slides/content/animation_widgets_implicitly_container.dart';
@@ -63,6 +64,9 @@ class SlideContentFactory {
     });
     register('animation_widgets_implicitly_container_example', (params) {
       return AnimationWidgetsImplicitlyContainerExample();
+    });
+    register('animated_container_example', (params) {
+      return AnimatedContainerExample();
     });
     register('animation_widgets_implicitly_container_example_fade', (params) {
       return AnimationWidgetsImplicitlyContainerExampleFade();
