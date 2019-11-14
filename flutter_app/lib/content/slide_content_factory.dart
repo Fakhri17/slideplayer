@@ -12,6 +12,8 @@ import 'package:flutter_slides/content/pillars_content.dart';
 import 'package:flutter_slides/content/rect_content.dart';
 import 'package:flutter_slides/content/supported_platforms_content.dart';
 import 'package:flutter_slides/content/team_photos_content.dart';
+import 'package:flutter_slides/content/what_is_animation.dart';
+import 'package:flutter_slides/content/what_is_animation_detail.dart';
 import 'package:flutter_slides/models/normalization_multipliers.dart';
 
 typedef Widget Constructor<Widget>(
@@ -41,6 +43,12 @@ class SlideContentFactory {
   SlideContentFactory._internal() {
     register('ampersanda_profile', (params) {
       return AmpersandaProfile();
+    });
+    register('what_is_animation', (params) {
+      return WhatIsAnimation();
+    });
+    register('what_is_animation_detail', (params) {
+      return WhatIsAnimationDetail();
     });
     register('error', (params) => ErrorContent());
     register('rect', (params) => RectContent(contentMap: params.contentMap));
