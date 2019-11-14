@@ -18,6 +18,9 @@ import 'package:flutter_slides/content/pillars_content.dart';
 import 'package:flutter_slides/content/rect_content.dart';
 import 'package:flutter_slides/content/supported_platforms_content.dart';
 import 'package:flutter_slides/content/team_photos_content.dart';
+import 'package:flutter_slides/content/thanks.dart';
+import 'package:flutter_slides/content/ticker_content.dart';
+import 'package:flutter_slides/content/ticker_title.dart';
 import 'package:flutter_slides/content/what_is_animation.dart';
 import 'package:flutter_slides/content/what_is_animation_detail.dart';
 import 'package:flutter_slides/models/normalization_multipliers.dart';
@@ -69,6 +72,15 @@ class SlideContentFactory {
     });
     register('animated_container_example', (params) {
       return AnimatedContainerExample();
+    });
+    register('ticker_title', (params) {
+      return TickerTitle();
+    });
+    register('ticker_content', (params) {
+      return TickerContent();
+    });
+    register('thanks', (params) {
+      return ThanksScreen();
     });
     register('animation_widgets_implicitly_container_example_fade', (params) {
       return AnimationWidgetsImplicitlyContainerExampleFade();

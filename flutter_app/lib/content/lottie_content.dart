@@ -1,10 +1,10 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:flutter_slides/models/slides.dart';
 import 'package:flutter/material.dart';
-import 'package:lottie_flutter/lottie_flutter.dart';
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:flutter_slides/models/slides.dart';
+import 'package:lottie_flutter/lottie_flutter.dart';
 
 class LottieContent extends StatefulWidget {
   final String compositionAssetPath;

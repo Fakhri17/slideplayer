@@ -24,7 +24,7 @@ class _AnimatedContainerKindsState extends State<AnimatedContainerKinds> {
           children: <Widget>[
             Positioned(
               child: AnimatedContainer(
-                color: state ? Colors.red : Colors.blue,
+                color: state ? Colors.red : Colors.greenAccent,
                 padding: EdgeInsets.all(state ? 24.0 : 0),
                 duration: Duration(milliseconds: 1000),
                 child: Text(
