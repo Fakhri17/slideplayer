@@ -19,7 +19,7 @@ class _AnimatedContainerExampleState extends State<AnimatedContainerExample> {
           top: MediaQuery.of(context).size.width * 0.04,
           child: AnimatedContainer(
             width: MediaQuery.of(context).size.width * (size ? 0.4 : 0.2),
-            height: MediaQuery.of(context).size.width * 0.2,
+            height: MediaQuery.of(context).size.width * (size ? 0.4 : 0.2),
             duration: Duration(milliseconds: 200),
             decoration: BoxDecoration(
                 color: bg ? Colors.red : Colors.blue,

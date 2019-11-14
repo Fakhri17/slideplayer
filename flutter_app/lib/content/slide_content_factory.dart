@@ -22,6 +22,8 @@ import 'package:flutter_slides/content/what_is_animation.dart';
 import 'package:flutter_slides/content/what_is_animation_detail.dart';
 import 'package:flutter_slides/models/normalization_multipliers.dart';
 
+import 'animated_container_kinds.dart';
+
 typedef Widget Constructor<Widget>(
   SlideContentParams contentParams,
 );
@@ -70,6 +72,9 @@ class SlideContentFactory {
     });
     register('animation_widgets_implicitly_container_example_fade', (params) {
       return AnimationWidgetsImplicitlyContainerExampleFade();
+    });
+    register('animated_container_kinds', (params) {
+      return AnimatedContainerKinds();
     });
     register('what_is_animation_detail', (params) {
       return WhatIsAnimationDetail();
