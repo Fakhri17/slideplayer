@@ -41,7 +41,7 @@ class _ThanksScreenState extends State<ThanksScreen>
           child: Center(
             child: Container(
               child: Text(
-                'Implicitly Animations',
+                'Thank you :)',
                 style: TextStyle(
                     fontSize: MediaQuery.of(context).size.width * 0.064),
               ),
